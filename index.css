@@ -1,0 +1,109 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+ }
+ .container {
+    width: 100%;
+    height: 100vh;
+
+    overflow-y: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .container .game{
+    width: 60%;
+    height: 60%;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+ 
+ }
+ .game .top{
+    width: 50%;
+    height: 30%;
+
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+ }
+.game .but {
+    width: 100%;
+    height: 30%;
+
+    padding: 0.5em;
+    display: flex;
+    justify-content: space-between;
+}
+.game .top .a{
+    width: 30%;
+    height: 100%;
+    background-color:whitesmoke;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 2s ease, box-shadow 2s ease; /* Thời gian chậm hơn */
+    border: 2px solid gray;
+}
+.game .top .a:hover{
+    transform: scale(1.1); /* Phóng to phần tử lên 20% */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Bóng đổ lớn hơn khi hover */
+    
+}
+.game .top .a img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.game .but .b{
+    width: 15%;
+    height: 100%;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Thời gian chậm hơn */
+    border: 2px solid gray;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.game .but .b:hover{
+    transform: scale(1.1); /* Phóng to phần tử lên 20% */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Bóng đổ lớn hơn khi hover */
+    
+}
+.game .but .b img{
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+
+}
+.game .but .b div{
+    width: 1em;
+    height:1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game .nut {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 1em;
+}
+.game .nut button{
+    width: 10%;
+    height: 100%;
+    background-color: chartreuse;
+    border-radius: 10px;
+   
+    border: none;
+    font-weight: 500;
+}
+.game .nut button:hover {
+    transform: scale(1.1);
+}
